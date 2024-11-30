@@ -46,7 +46,7 @@ function Navbar() {
           </li>
           <li className="relative">
             <Link
-              href="/about"
+              href="/AboutMe"
               className="text-white font-bold relative uppercase before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-white before:scale-x-0 before:origin-right before:transition-transform before:duration-[600ms] before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:origin-left hover:before:scale-x-100"
             >
               About Me
@@ -75,12 +75,12 @@ function Navbar() {
       {isMenuOpen && (
         <ul className="flex-col md:hidden space-y-2 mt-4">
           <li>
-            <a href="#" className="text-white block">
+            <a href="/" className="text-white block">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="text-white block">
+            <a href="/AboutMe" className="text-white block">
               About Me
             </a>
           </li>

@@ -13,51 +13,48 @@ function SkillSection() {
   ];
 
   return (
-    <div className="p-24 mt-10">
-      <h2 className="text-3xl font-semibold mb-2 lg:text-5xl xl:text-5xl">
+    <div className="p-6 sm:p-12 lg:p-24 mt-10">
+      <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold mb-4">
         My Skills
       </h2>
-      <div className="border border-2 w-2/5 mb-6 md:w-1/5" />
+      <div className="border border-2 w-2/4 sm:w-1/4 lg:w-1/5 mb-6" />
+      
       <div className="mt-8">
-        <h1 className="text-xl font-medium font-bold">
-          <strong className="text-3xl">Expertise</strong>
-          <div className="grid grid-cols-2 gap-4 ml-10 pt-3 text-2xl font-semibold">
+        <h1 className="text-lg sm:text-xl lg:text-2xl font-medium font-bold">
+          <strong className="text-2xl sm:text-3xl">Expertise</strong>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 ml-2 sm:ml-6 pt-3 text-lg sm:text-xl font-semibold">
             <li>Machine Learning</li>
             <li>Deep Learning</li>
             <li>Computer Vision</li>
-            <li>Internet of Things (IOT)</li>
+            <li>Internet of Things (IoT)</li>
             <li>Cyber Security</li>
             <li>Web Development</li>
           </div>
         </h1>
       </div>
 
-      {/* Grid Layout for the skills */}
-      <div className="grid grid-cols-2 gap-8 mt-8">
+      {/* Responsive Grid Layout for Skills */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
         {skills.map((skill) => (
           <div key={skill.name} className="flex items-center">
             <div className="w-full">
               <div className="relative pt-1">
                 <div className="flex mb-2 items-center justify-between">
-                  <div>
-                    <span className="text-lg font-semibold">
-                      {skill.name} ({skill.percentage}%)
-                    </span>
-                  </div>
+                  <span className="text-sm sm:text-base lg:text-lg font-semibold">
+                    {skill.name} ({skill.percentage}%)
+                  </span>
                 </div>
-                <div className="flex mb-2">
-                  <div className="w-full bg-gray-200 rounded-full">
-                    <div
-                      className={`h-2 rounded-full ${
-                        skill.percentage === 100
-                          ? "bg-green-600"
-                          : skill.percentage >= 75
-                          ? "bg-yellow-500"
-                          : "bg-red-500"
-                      }`}
-                      style={{ width: `${skill.percentage}%` }}
-                    ></div>
-                  </div>
+                <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div
+                    className={`h-2 rounded-full ${
+                      skill.percentage === 100
+                        ? "bg-green-600"
+                        : skill.percentage >= 75
+                        ? "bg-yellow-500"
+                        : "bg-red-500"
+                    }`}
+                    style={{ width: `${skill.percentage}%` }}
+                  ></div>
                 </div>
               </div>
             </div>

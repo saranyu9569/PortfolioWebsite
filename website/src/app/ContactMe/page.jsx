@@ -12,7 +12,7 @@ import {
 const Page = () => {
   const contactInfo = {
     email: 'saranyu9569@outlook.com',
-    telephone: '0882856552',
+    telephone: '088-285-6552',
     facebook: 'Genki Takayama (Social Media Contact)',
     instagram: 'genki_st (Social Media Contact)',
     linkedin: 'Saranyu Takayama (Works)',
