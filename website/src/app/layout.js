@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased debug-screens`}
       >
         <Navbar />
         <main className="bg-black-500">{children}</main>

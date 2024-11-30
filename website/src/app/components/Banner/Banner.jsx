@@ -26,7 +26,7 @@ function ParallaxText({ children }) {
 export default function Banner() {
   return (
     <div className="py-8 relative">
-      <div className="absolute top-0 left-0 w-3/4 ml-16 md:ml-20 lg:w-2/3 h-full bg-white z-10 ml-10 rounded-md pt-10"> {/*White box */}
+      <div className="absolute top-0 left-0 w-3/4 ml-20 sm:ml-24 md:ml-24 lg:w-2/3 h-full bg-white z-10 ml-15 rounded-md pt-10"> {/*White box */}
         <div className="text-black text-6xl font-bold p-10 pt-24">
           <Typewriter
             words={["Hello", "ようこそ", "สวัสดีครับ"]}

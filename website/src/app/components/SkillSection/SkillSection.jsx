@@ -13,11 +13,11 @@ function SkillSection() {
   ];
 
   return (
-    <div className="p-6 sm:p-12 lg:p-24 mt-10">
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold mb-4">
+    <div className="p-24 sm:p-12 md:p-24 lg:p-24 mt-10 md:p-14 2xl:p-44">
+      <h2 className="text-3xl sm:text-3xl lg:text-5xl font-semibold mb-4 text-center md:text-left">
         My Skills
       </h2>
-      <div className="border border-2 w-2/4 sm:w-1/4 lg:w-1/5 mb-6" />
+      <div className="border border-2 w-2/4 sm:w-1/4 lg:w-1/5 mb-6 mx-auto md:mx-0" />
       
       <div className="mt-8">
         <h1 className="text-lg sm:text-xl lg:text-2xl font-medium font-bold">
